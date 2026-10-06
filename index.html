@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0e12" />
+    <title>Syrix Arena TPS Prototype</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <div id="joystick-area" aria-label="Movement joystick">
+        <div id="joystick-base">
+          <div id="joystick-thumb"></div>
+        </div>
+      </div>
+      <button id="jump-button" type="button" aria-label="Fire weapon">Fire</button>
+    </div>
+
+    <aside id="debug-panel" class="hidden">
+      <div class="debug-header">Debug</div>
+      <div id="debug-stats"></div>
+    </aside>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
